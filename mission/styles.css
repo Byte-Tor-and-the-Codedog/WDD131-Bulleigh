@@ -1,0 +1,41 @@
+html {
+    margin: 0;
+    height: 100%;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#header {
+    align-items: center;
+    text-align: justify;
+    justify-content: center;
+
+}
+ 
+#box {
+    border-style: groove;
+    border-color: gray;
+
+    gap: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    max-width: 40%;
+    padding: 5%;
+    margin: 10%;
+}
+
+#statement {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    text-align: left;
+}
+
+img {
+    max-width: 200px;
+}
