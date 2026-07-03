@@ -62,11 +62,9 @@ footer {
         border-right: 3px solid yellow;
     }
     .entry {
-        max-width: 800px;
+        max-width: 500px;
         width: 100%;
         align-items: flex-start;
-        justify-items: center;
-        justify-content: center;
         display: flex;
         flex-direction: row;
         margin:0 auto;
@@ -89,6 +87,7 @@ footer {
         width: 33%;
         padding-right: 20px;
         height: 100%;
+        margin-left: 0;
     }
 
 }
