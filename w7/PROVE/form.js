@@ -7,9 +7,9 @@ const idLabel = document.querySelector("#idContainer label");
 
 function updateNotesField() {
   const value = attendantType.value;
-  //console.log("update-notes works in theory.")
+
   if (value === "student") {
-    //console.log("it knows what many is");
+
     idContainer.hidden = false;
     idLabel.textContent = "Student #";
   }
@@ -22,21 +22,12 @@ function updateNotesField() {
     idContainer.hidden = true;
   }
 
-  /*if (value.hidden === true) {
-    console.log("it is still hidden");
-  }
-  else if (value.hidden === false) {
-    console.log("it isn't hidden");
-  }*/
-  // Show the travel notes on the form if they are choosing many campuses and require it
-  
 }
 
 attendantType.addEventListener("change", updateNotesField);
 updateNotesField();
 
 
-// Ensure they choose a date later than the current date
 function isPastDate(value) {
   const today = new Date();
   const chosen = new Date(value);
@@ -54,15 +45,6 @@ form.addEventListener("submit", function (event) {
   const type = form.attendantType.value;
   const eventDate = form.eventDate.value;
   const ID = identification.value.trim();
-  // Validate the input
-  // Let the user know to select at least one campus
-
-  
-  // Let the user know if they choose many campuses but didn't put a note that they need to add a note
-
-  
-  //Let the user know if they choose many campus but only had one campus selected that they need to choose at least two campuses
-  
 
   if (isPastDate(eventDate)) {
     output.textContent = "Please choose a later date.";
