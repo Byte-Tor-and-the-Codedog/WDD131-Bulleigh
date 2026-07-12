@@ -1,0 +1,118 @@
+
+<!DOCTYPE html>
+<html lang="en-us">
+	<head>
+		<meta charset="utf-8" />
+		<title>Site Plan</title>
+		<link type="text/css" rel="stylesheet" href="site-plan.css" />
+	</head>
+
+	<body>
+		<header>
+			<h1>Bulletiin Project Plan</h1>
+			<h2>Allen Bulleigh</h2>
+			<h2>WDD 131</h2>
+			<!-- In the header above, add the name or your site, your name and class number. For example if you are in section 3 you would put WDD 131.03 -->
+		</header>
+		<main>
+			
+			<hr />
+			<h2>Overview</h2>
+			<h3>Purpose</h3>
+			<p>his project plan is a part of a larger project I am doing with a group. This semester I have been working on an online chat website with my group in applied programming. The plan is to add a handful of new features to the existing site that incorporate what I have learned this semester.</p>
+			<!-- change this -->
+
+			<h3>Audience</h3>
+			<p>This is a chat that is open to everyone in the university currently. We have plans to open it universally eventually but this kept traffic under control during development. </p>
+			<!-- change this -->
+
+			<h3>Dynamic elements</h3>
+			<ul>
+                <li>Add more responsive stylization elements (a cursor that moves and rotates like it did in the nintendo wii for example)</li>
+                <li>Integrate functionality of private password-protected chatrooms (this is collaborative and will also involve significant input from teammates).</li>
+                <li>Expand login page to add the option to create a username and password rather than sign in via google account (this is also collaborative as it involves work from those tasked with the backend).</li>
+            </ul>
+			<!-- change this -->
+
+			<hr />
+			<h2>Branding</h2>
+			<h3>Website Logo</h3>
+			<!-- Replace this with some sort of logo for your site.  A logo can be as simple as the name of your site in a nice font :) -->
+			<img src="images/favicon.png" alt="Logo image" />
+			<hr />
+			<h2>Style Guide</h2>
+
+			<h3>Color Palette</h3>
+			<!--  The colors you choose for a website are one of the most important decisions you will make. Follow the instructions on the activity in iLearn then return and replace the color codes below with the hex color codes (the 6 digit numbers that show at the bottom of each color) for the colors you have chosen below.  You should have at least 2 colors but do not have to fill in all 4 if you do not need them.  -->
+
+			<!-- Copy and paste the URL to your finished palette below Make sure to paste it into both spots -->
+			Palette URL:
+			<a
+				href="https://coolors.co/ececec-90ee90-82a77e-c2f54a"
+				target="_blank"8c
+				>https://coolors.co/ececec-90ee90-82a77e-c2f54a</a
+			>
+
+			<table class="colors">
+				<tbody>
+					<tr>
+						<th>Primary</th>
+						<th>Secondary</th>
+						<th>Accent 1</th>
+						<th>Accent 2</th>
+					</tr>
+					<!-- Replace the numbers in the boxes below with your hex color codes. Then switch to the site-plan.css file and change your colors there as well. -->
+					<tr>
+						<td class="primary">[#ececec]</td>
+						<td class="secondary">[#90ee90]</td>
+						<td class="accent1">[#82a77e]</td>
+						<td class="accent2">[#c2f54a]</td>
+					</tr>
+				</tbody>
+			</table>
+
+			
+
+			<h3>Pseudocode for your project</h3>
+
+			<p>
+				Login:
+
+				googleButton.addeventlistener(click, googleLogin);
+
+				password protected chat:
+
+				subMitPswdBtn.addEventListener("click", function(event) {
+					const passy = pswdInput.value;
+
+					hashy = pswdHash(passy);
+
+					isCorrect = sendOver(hashy);
+
+					if (isCorrect) {
+						event.sendOverTheGoodsRequest();
+						event.classList.remove('closed');
+						event.classList.add('open');
+					}
+
+					else {
+						event.txtBanner = "Wrong Passord, try again.";
+					}
+				});
+
+			<h3>Wireframes</h3>
+
+			<h3>Landing page</h3>
+			<p>
+				This is to be the login Page, you can either create an accaount, sign in, or sign in via google. (To date only the sign in via google is running.)
+			</p>
+			<img src="images/login.png" alt="home page wireframe" />
+
+			<h3>Main Page</h3>
+			<p>
+				This is the main page for the current site. The format will be roughly the same but it sill be stylized much different. Also it will have some chats with hidden previews that are behind a password.
+			</p>
+			<img src="images/messages.png" alt="page 2 wireframe" />
+		</main>
+	</body>
+</html>
